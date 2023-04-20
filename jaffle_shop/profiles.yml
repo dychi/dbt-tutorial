@@ -1,0 +1,26 @@
+config:
+  use_colors: true
+jaffle_shop:
+  outputs:
+
+    dev:
+      type: postgres
+      threads: 1
+      host: localhost
+      port: 5442
+      user: user
+      pass: password
+      dbname: database
+      schema: dev
+
+    prod:
+      type: postgres
+      threads: 1
+      host: localhost
+      port: 5442
+      user: user
+      pass: password
+      dbname: database
+      schema: analytics
+
+  target: dev
